@@ -1,0 +1,22 @@
+/**
+* SeoSnippets
+*
+* JS generator of SEO snippet preview
+*
+* @category    plugin
+* @version     1.0
+* @license     http://www.gnu.org/copyleft/gpl.html GNU Public License (GPL)
+* @package     modx
+* @internal    @events OnDocFormRender
+* @internal    @modx_category Manager and Admin
+* @internal    @properties &titleTV=id of title tv;text;1&descriptionTV=id of title tv;text;3
+* @internal    @installset base
+* @reportissues https://github.com/tregubovand/seoSnippets-evolution
+* @documentation Official docs https://github.com/tregubovand/seoSnippets-evolution
+* @author      tregubovand
+* @lastupdate  17/10/2017
+*/
+if(!defined('MODX_BASE_PATH')){die('What are you doing? Get out of here!');}
+
+include_once $modx->config['base_path'].'assets/plugins/seosnippets/core.php';
+new SeoSnippets($modx);
